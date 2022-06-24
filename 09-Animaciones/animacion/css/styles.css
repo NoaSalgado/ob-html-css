@@ -1,0 +1,43 @@
+.father{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+
+.son{
+    width: 50%;
+    height: 50%;
+    color: beige;
+    animation: translation 2s ease-in-out infinite forwards alternate;
+}
+
+.father:hover .son{
+    animation-play-state: paused;
+}
+
+@keyframes translation{
+    0%{
+        background-color: beige;
+        transform: translateX(0%);
+    }
+
+    20%{
+        background-color: orange;
+        transform: translateX(100%);
+    }
+
+    40%{
+        background-color: palevioletred;
+        transform: translate(100%, 100%);
+    }
+
+    80%{
+        background-color: blueviolet;
+        transform: translate(0%, 100%);
+    }
+
+    100%{
+        background-color: beige;
+        transform: translate(0%, 0%);
+    }
+}

@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.btn-modern{
+    background-color: orange;
+    border: none;
+    border-bottom: 4px solid orangered;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.btn-modern:hover{
+    background-color: orangered;
+    border-bottom: 4px solid orange;
+    box-shadow: 3px 3px 3px #ccc;
+    color: #ccc;
+    transform: translateY(-5px);
+    transition: all 0.4s;
+}

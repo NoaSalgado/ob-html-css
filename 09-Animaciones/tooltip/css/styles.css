@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.btn-tooltip{
+    background-color: green;
+    border: none;
+    border-bottom: 4px solid darkgreen;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    position: relative;
+    transition: background-color 150ms;
+}
+
+.btn-tooltip:hover{
+    background-color: rgb(0, 100, 0);
+}
+
+.tooltip{
+    background-color: #333;
+    border-radius: 5px;
+    color: #ddd;
+    opacity: 0;
+    padding: 5px 10px;
+    position: absolute;
+    left: -100%;
+    top: -50px;
+    transform: translate(25%);
+    transition: opacity 150ms;
+    /*visibility: hidden;*/
+   
+}
+
+.btn-tooltip:hover .tooltip{
+    /*visibility: visible;*/
+    opacity: 1;
+}
+
+.tooltip::before{
+    content: "";
+    border: solid 10px transparent;
+    border-top-color: #333;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*Crear un triángulo con CSS
+.triangle{
+    border: solid 10px transparent;
+    border-top-color: #333;
+}
+*/
