@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+    <title>Elementos de interés en Bootstrap</title>
+</head>
+<body>
+    <div class="container py-4 mx-auto">
+        <!--Jumbotron-->
+        <div class="bg-light p-5 rounded-3">
+            <div class="container-fluid py-5">
+                <h3 class="fw-bold display-5">Jumbotron</h3>
+                <p class="col-8 fs-4">Este jumbotron contiene un botón que abre un modal</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Abrir modal</button>
+            </div>
+        </div>
+
+        <!--Modal-->
+        <div class="modal fade" id="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Título del modal</h5>
+                    </div>
+                    <div class="modal-body">
+                        Este es el contenido del modal
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar modal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-4 mt-4 mx-auto">
+        <h3 class="fw-bold display-5 text-center">Formulario de contacto</h3>
+        <form action="/">
+            <div class="input-group mb-3">
+                <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                <input type="text" class="form-control" placeholder="Tu nombre">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text"><i class="bi bi-phone-fill"></i></span>
+                <input type="number" class="form-control" placeholder="999888777">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text"><i class="bi bi-chat-left-dots-fill"></i></span>
+                <textarea cols="30" rows="5" class="form-control" placeholder="Información adicional"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success d-block mx-auto">Enviar</button>
+        </form>
+    </div>
+
+    <div class="container py-4  mt-4 mx-auto">
+        <div class="card border border-info">
+            <div class="card-header bg-info fw-bold fs-5 text-white">
+                Noa S.
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Full Stack Developer</h5>
+                <p class="card-text">Tecnologías:</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">HTML</li>
+                    <li class="list-group-item">CSS</li>
+                    <li class="list-group-item">JavaScript</li>
+                    <li class="list-group-item">React</li>
+                    <li class="list-group-item">Node</li>
+                    <li class="list-group-item">Python</li>
+                </ul>
+            </div>
+            <div class="card-footer bg-info fw-bold text-white">
+                noadev@mail.com
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

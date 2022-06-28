@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+    <title>Formularios</title>
+  </head>
+  <body>
+   <div class="container py-4">
+    <form>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre: </label>
+          <input type="text" class="form-control" id="nombre">
+        <div class="mb-3">
+          <label for="apellidos" class="form-label">Apellidos: </label>
+          <input type="text" class="form-control" id="apellidos" disabled>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email: </label>
+            <input type="email" class="form-control form-control-plaintext form-control-lg" id="email" value="mail@mail.com">
+          </div>
+          <div class="mb-3">
+            <label for="comprobarMail" class="form-label">Email introducido: </label>
+            <input type="mail" class="form-control form-control-sm" id="comprobarMail"  value="mail@mail.com" readonly>
+          </div>
+          <div class="mb-3">
+            <label for="formFile" class="form-label">Sube tus archivos</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="edad">
+          <label class="form-check-label" for="edad">Eres mayor de edad</label>
+        </div>
+        <div class="mb-3">
+            <input type="color" class="form-control form-control-color">
+        </div>
+        <div class="mb-3">
+            <label for="exampleDataList" class="form-label">Selecciona tu ciudad: </label>
+            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+            <datalist id="datalistOptions">
+                <option value="Madrid">
+                <option value="New York">
+                <option value="Barcelona">
+                <option value="Los Angeles">
+                <option value="Paris">
+            </datalist>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+   </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
